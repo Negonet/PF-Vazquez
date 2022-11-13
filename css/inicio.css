@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  background-color: #353436; }
+
+div .container {
+  margin-top: 80px; }
+
+div .tarjeta {
+  margin-top: 80px;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 20px 20px 50px #000000e1;
+  background: #ffffff0e;
+  border-top: 1px solid #cececead;
+  border-left: 1px solid #cececead;
+  border-radius: 15px;
+  /*efecto vidrio blur*/
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all 300ms; }
+
+div img {
+  width: 100%; }
+
+div .tarjeta:hover {
+  transform: translateY(-10px);
+  transform: scale(1.1); }
+
+div table {
+  overflow-y: none;
+  display: relative; }
+
+div th, div td, div s {
+  color: #edf2f4;
+  padding: 10px 10px; }
+
+div s {
+  background-color: #353436;
+  border-radius: 10px;
+  padding: 10px; }
+
+div .container_background-triangle {
+  height: 600px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5; }
+
+div .linea {
+  background: red;
+  position: absolute; }
+
+div .linea1 {
+  width: 2200px;
+  height: 60px;
+  position: relative;
+  background: linear-gradient(to left, #25088f, #7c7ca8);
+  animation: t1 8s ease infinite; }
+
+div .linea2 {
+  width: 2200px;
+  height: 180px;
+  background: linear-gradient(to left, #0b97c2, #a005cf);
+  top: 350px;
+  animation: t2 9s ease infinite; }
+
+div .linea3 {
+  width: 2200px;
+  height: 130px;
+  position: relative;
+  background: linear-gradient(to left, #df8b0d, #f10b0b);
+  top: 100px;
+  animation: t3 7s ease infinite; }
+
+h1 {
+  color: #edf2f4;
+  font-size: 60px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  display: inline-block;
+  background-color: #edf2f4;
+  width: 100%;
+  align-items: center; }
+
+nav {
+  z-index: 2; }
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 100%;
+    display: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
+@keyframes t1 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-20px); }
+  100% {
+    transform: translate(0px); } }
+
+@keyframes t2 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translate(0px); } }
+
+@keyframes t3 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translate(0px); } }
