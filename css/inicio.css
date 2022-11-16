@@ -7,7 +7,13 @@ body {
   background-color: #353436; }
 
 div .container {
-  margin-top: 80px; }
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 div .tarjeta {
   margin-top: 80px;
@@ -88,7 +94,7 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0px;
   display: inline-block;
   background-color: #edf2f4;
@@ -105,16 +111,11 @@ h2 {
     margin-top: 40px;
     margin-left: 15px; }
  
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 776px) {
   .container {
-    width: 100%;
+    width: 80%;
     display: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); } }
+    flex-wrap: wrap; } }
 
 @keyframes t1 {
   0% {

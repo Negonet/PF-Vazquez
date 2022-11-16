@@ -13,6 +13,12 @@ body{
 div{
     .container{
         margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
         .tarjeta{
@@ -130,15 +136,13 @@ h1{
 }
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0px;
     display: inline-block;
     background-color: #edf2f4;
     width: 100%;
     align-items: center;
 
-
-    
 }
 
 nav {
@@ -158,16 +162,9 @@ h2 {
 @media screen and (min-width: 576px){
     .container{
         width: 100%;
-        
         display: relative;
         flex-wrap: wrap;
-        justify-content: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         
-
     }
     
 }
