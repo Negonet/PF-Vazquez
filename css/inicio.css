@@ -16,8 +16,8 @@ div .container {
   transform: translate(-50%, -50%); }
 
 div .tarjeta {
-  margin-top: 80px;
-  max-width: 700px;
+  margin: auto;
+  max-width: 800px;
   height: auto;
   display: block;
   align-items: center;
@@ -36,7 +36,6 @@ div img {
   width: 100%; }
 
 div .tarjeta:hover {
-  transform: translateY(-10px);
   transform: scale(1.1); }
 
 div table {
@@ -59,7 +58,7 @@ div .container_background-triangle {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -5; }
+  z-index: -1; }
 
 div .linea {
   background: red;
@@ -94,12 +93,12 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 footer {
-  position: relative;
-  bottom: 0px;
+  position: absolute;
+  bottom: -80px;
   display: inline-block;
   background-color: #edf2f4;
   width: 100%;
-  align-items: center; }
+  text-align: center; }
 
 nav {
   z-index: 2; }
@@ -110,12 +109,46 @@ h2 {
     z-index: 3;
     margin-top: 40px;
     margin-left: 15px; }
+
+.google {
+    max-width: 40%;}
+
+.calendario {
+  width: 400px;
+  height: 400px;}
  
+
 @media screen and (max-width: 776px) {
-  .container {
-    width: 80%;
-    display: relative;
-    flex-wrap: wrap; } }
+    .container {
+      width: 80%;
+      display: relative;
+      flex-wrap: wrap; }
+    .tarjeta {
+      width: 100% !important;}
+    th {
+      font-size: 10px;}
+    td {
+      font-size: 10px;}
+    .boton {
+      padding: 0px;
+      font-size: 10px;}
+    .calendario {
+      max-width: 500px;
+      height: 300px;}}
+
+@media screen and (max-width: 425px) {
+    .codigo {
+      display: none;}
+    .boton {
+      display: flex;}
+    .calendario {
+      max-width: 240px;
+      height: 300px;}}
+
+@media screen and (min-width: 776px) {
+    .calendario {
+      width: 700px;
+      height: 450px;}}
 
 @keyframes t1 {
   0% {
